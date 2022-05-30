@@ -99,7 +99,7 @@ namespace BolaoApp.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("Id,Nome")] Time time)
         {
-            if (id != time.Id)
+            if (id != time.Id || !TimeExists(time.Id))
             {
                 return NotFound();
             }
@@ -113,14 +113,7 @@ namespace BolaoApp.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!TimeExists(time.Id))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
+                    throw;
                 }
                 return RedirectToAction(nameof(Index));
             }

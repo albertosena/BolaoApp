@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OqECR40lrlmJYWFT0jLDTK9A/2Zc/vzL/VhOA9gL4FC72LaU0vLfiLx3/pcHAlhc5ozSUl0PxDARZvhngqB/1A==",
+  "dgSpecHash": "zBm/vMk8wQBoUYYEmUWCBuFl95QGjU9XlDx1GfX2iC4KL5KEx5s7golWRQpmRkOvNtev5uUp4r82R/GT3QieHg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Alberto\\Desktop\\git\\BolaoApp\\BolaoApp.csproj",
+  "projectFilePath": "C:\\Users\\Alberto\\Desktop\\BolaoApp\\BolaoApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Alberto\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Alberto\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.17\\microsoft.aspnetcore.cryptography.internal.5.0.17.nupkg.sha512",
