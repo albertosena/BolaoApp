@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using BolaoApp.Data;
 using BolaoApp.Models;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.Extensions.Configuration;
 
 namespace BolaoApp.Controllers
 {
@@ -146,7 +147,8 @@ namespace BolaoApp.Controllers
                 return NotFound();
             }
 
-            if(User.Identity.Name != "administrador@gmail.com"){
+            IConfiguration config = new ConfigurationBuilder().AddJsonFile("appsettings.json").Build();
+            if(User.Identity.Name != config.GetSection("EMAIL_ADMINISTRADOR").Value){
                 return Redirect("/Jogo");
             }
 
