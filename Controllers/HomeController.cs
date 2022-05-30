@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using BolaoApp.Models;
+using BolaoApp.Controllers;
 
 namespace BolaoApp.Controllers
 {
@@ -23,9 +24,19 @@ namespace BolaoApp.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult Time()
         {
-            return View();
+            return Redirect("/Time");
+        }
+
+        public IActionResult Jogo()
+        {
+            return Redirect("/Jogo");
+        }
+
+        public IActionResult Ranking()
+        {
+            return Redirect("/Ranking");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

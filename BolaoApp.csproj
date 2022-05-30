@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
-    <UserSecretsId>aspnet-BolaoApp-75E94389-3695-4AA5-9B0F-613527A3757A</UserSecretsId>
+    <UserSecretsId>aspnet-BolaoApp-7DFD893C-8418-4490-BA5B-3FD3BFDD067E</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
@@ -15,6 +15,7 @@
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="5.0.17" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="5.0.17" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.17" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0" />
   </ItemGroup>
 
 </Project>
