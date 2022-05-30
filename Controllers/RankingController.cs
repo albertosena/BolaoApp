@@ -71,9 +71,7 @@ namespace BolaoApp.Controllers
                         .Jogos
                         .AsNoTracking()
                         .Where(x => x.User == "administrador@gmail.com")
-                        .ToListAsync();
-
-                    
+                        .ToListAsync();  
 
                     foreach(Microsoft.AspNetCore.Identity.IdentityUser user in allUsers){
                         ranking.User = user.UserName;
@@ -86,12 +84,9 @@ namespace BolaoApp.Controllers
 
                         foreach(Jogo jogo in allJogos){
                             Jogo jogoModelo = jogosModelo.Find(x => x.IdMandante == jogo.IdMandante);
-                            if(jogoModelo.GolsMandante == jogo.GolsMandante){
-                                ranking.Pontos = ranking.Pontos + 1;
-                            }
-                            if(jogoModelo.GolsVisitante == jogo.GolsVisitante){
-                                ranking.Pontos = ranking.Pontos + 3;
-                            }
+
+                            ranking.Pontos = ranking.Pontos + acertouGolsMandante(jogoModelo, jogo);
+                            ranking.Pontos = ranking.Pontos + acertouGolsVisitante(jogoModelo, jogo);
                         }
 
                         await Create(ranking);
@@ -105,6 +100,14 @@ namespace BolaoApp.Controllers
             }
 
             return View();
+        }
+
+        public int acertouGolsMandante(Jogo jogoModelo, Jogo jogo){
+            return jogoModelo.GolsMandante == jogo.GolsMandante ? 1 : 0; 
+        }
+
+        public int acertouGolsVisitante(Jogo jogoModelo, Jogo jogo){
+            return jogoModelo.GolsVisitante == jogo.GolsVisitante ? 3 : 0; 
         }
 
         // POST: Ranking/Create

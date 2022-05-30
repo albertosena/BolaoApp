@@ -4797,11 +4797,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Alberto\\Desktop\\BolaoApp\\BolaoApp.csproj",
+      "projectUniqueName": "C:\\Users\\Alberto\\Desktop\\git\\BolaoApp\\BolaoApp.csproj",
       "projectName": "BolaoApp",
-      "projectPath": "C:\\Users\\Alberto\\Desktop\\BolaoApp\\BolaoApp.csproj",
+      "projectPath": "C:\\Users\\Alberto\\Desktop\\git\\BolaoApp\\BolaoApp.csproj",
       "packagesPath": "C:\\Users\\Alberto\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Alberto\\Desktop\\BolaoApp\\obj\\",
+      "outputPath": "C:\\Users\\Alberto\\Desktop\\git\\BolaoApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Alberto\\AppData\\Roaming\\NuGet\\NuGet.Config",
